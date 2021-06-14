@@ -8,7 +8,7 @@
     Note -> Not actual value is passesd. This is call by value.
          -> we cant change the value in formal parameter
          that means let say Add(2,3) -> 2 and 3 are argument which is passed
-         when we talk about function int swap(a,b) in that copy of 2 and 3 goes inside
+         when we talk about function int Add(a,b) in that copy of 2 and 3 goes inside
          and that cant be changed.
          Let say function is called Add(2,3)
          that is int Add (int a , int b)
