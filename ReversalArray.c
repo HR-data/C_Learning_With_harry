@@ -1,7 +1,7 @@
 #include<stdio.h>
 int arr[50];
 int n;
-void ReverseArray(int * ptr)
+void ReverseArray(int * ptr) // one way to reverse array
     {
         //printf("%d \n",n);
         for (int i =n-1 ;i >=0 ; i--)
@@ -10,6 +10,21 @@ void ReverseArray(int * ptr)
             }
 
     }
+
+void arrayrev(int arr1[])  // by the help of swaaping arr[i] with arr[n-1-i]
+    {
+
+        for(int i = 0 ; i < n/2;i++)
+            {
+                int temp;
+                temp = arr1[i];
+                arr1[i] = arr1[n-1-i];
+                arr1[n-1-i] = temp;
+            }
+
+
+    } 
+
 int input(int m)      // function for taking from input from user
     {
         
@@ -37,9 +52,16 @@ int main()
             {
                 printf("%d  \n",arr[j]);
             }
-        printf("Your array after reversing digits \n");
+        printf("Your array after first tym reversing digits \n");
     
-        ReverseArray(arr);    
+        ReverseArray(arr);  
+        printf("Your array after second tym reversing digits \n");
+        arrayrev(arr);
+        for(int k = 0; k < n ; k++)
+            {
+                printf("%d  \n",arr[k]);
+            }
+      
 
 
         return 0;
