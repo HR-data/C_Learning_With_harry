@@ -59,6 +59,6 @@ int main()
         strcpy(harry.name,"Harsh");
         printf("Harry got marks is %d \n",harry.marks);
         printf("Name of harry is %s \n",harry.name);
-        printf("Fav charcter of harry is %s \n",harry.favchr);
+        printf("Fav charcter of harry is %c \n",harry.favchr);
         return 0;
     }    
