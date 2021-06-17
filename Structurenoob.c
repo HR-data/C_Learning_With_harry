@@ -44,7 +44,7 @@
 struct student
     {
         char favchr ;
-        char name;
+        char name[76];
         int id;
         int marks;
         
