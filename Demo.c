@@ -1,17 +1,18 @@
 #include<stdio.h>
 #include<string.h>
-struct student
+#include<time.h>
+int GenerateRandomNumber(int a)
     {
-        int id;
-        int marks;
-        char favchar ;
-        char name;
-    };
+        srand(time(NULL));
+        int num = rand()% a;
+        return num;
+    }
 
 int main()
     {
-        struct student harry;
-        harry.name = 'Harsh';
-        printf("%s \n", harry.name);
-        return 0;
-    }    
+        
+       
+        int n = GenerateRandomNumber(3);
+        printf("%d \n", n);
+            
+    }        
