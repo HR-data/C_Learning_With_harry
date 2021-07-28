@@ -65,7 +65,7 @@ int main()
         for(int i = 0 ; i < 3 ; i++) 
         {
         // Taking Input from user
-            printf("Hey %s ! Choose One From R for rock , P for paper, S for scissor.\n",Name);
+            printf("Hey %s ! Choose One From R for rock , P for paper, S for scissor.\n\n",Name);
             scanf("%c",&Playerchar);
             getchar();
             printf("You choose %c \n",Playerchar);
